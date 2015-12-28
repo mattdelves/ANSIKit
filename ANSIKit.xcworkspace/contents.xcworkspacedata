@@ -2,12 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:ANSIKit.xcodeproj">
+      location = "group:ANSIKit.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:nimble/Nimble.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:quick/Quick.xcodeproj">
+      location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

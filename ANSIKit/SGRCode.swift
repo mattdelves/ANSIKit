@@ -6,7 +6,11 @@
 //  Copyright (c) 2015 Matthew Delves. All rights reserved.
 //
 
-import UIKit
+#if os(OSX)
+    import Cocoa
+#else
+    import UIKit
+#endif
 
 public enum SGRCode: Int {
   case NoneOrInvalid = -1
@@ -67,11 +71,11 @@ public struct EscapeCharacters {
 }
 
 protocol Color {
-  var color: UIColor { get }
+  var color: ASKColor { get }
 }
 
 extension SGRCode: Color {
-  var color: UIColor {
+  var color: ASKColor {
     switch self {
     case SGRCode.FgBlack:
       return Colors.Fg.Black

@@ -1,6 +1,0 @@
-[submodule "quick"]
-	path = quick
-	url = https://github.com/quick/quick.git
-[submodule "nimble"]
-	path = nimble
-	url = https://github.com/quick/nimble.git
